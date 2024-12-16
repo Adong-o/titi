@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViralTitles - YouTube Title Optimization Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="./images/icon.svg" type="image/png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/icon.svg" alt="VitalTitles Logo" class="logo-img">
+            <span class="logo-text">ViralTitles</span>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How it Works</a>
+            <button class="sign-up-btn">Sign Up</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Transform Your <span class="highlight">YouTube Titles</span> into <span class="highlight-alt">View Magnets</span></h1>
+                <p class="hero-subtitle">
+                    Unlock the power of AI to generate <span class="highlight">high-performing titles</span> that boost your 
+                    click-through rates by up to <span class="highlight-alt">80%</span>. Our tool analyzes millions of successful 
+                    videos to create titles that <span class="highlight">rank higher</span> and attract more viewers.
+                </p>
+                <button class="cta-button">Get Started Free</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <p class="section-subtitle">Generate engaging titles in three simple steps</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/39ihnYtiZQc" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2>Pricing</h2>
+        <p class="section-subtitle">Currently Free for Everyone!</p>
+        
+        <div class="pricing-announcement">
+            <div class="announcement-card">
+                <i class="fas fa-gift announcement-icon"></i>
+                <h3>Early Access Offer</h3>
+                <p>We're currently in beta, and all features are completely free! Sign up now to get early access to our premium features.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Unlimited title generations</li>
+                    <li><i class="fas fa-check"></i> Advanced SEO optimization</li>
+                    <li><i class="fas fa-check"></i> Title performance metrics</li>
+                    <li><i class="fas fa-check"></i> No credit card required</li>
+                </ul>
+                <button class="cta-button sign-up-btn">Get Started Free</button>
+                <p class="beta-note">* Paid plans will be introduced in the future</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your YouTube Titles?</h2>
+                <p>Join over 100+ content creators who are already using our tool to boost their views</p>
+                <div class="cta-buttons">
+                    <button class="cta-button primary">Start Free Trial</button>
+                    <button class="cta-button secondary">Watch Demo</button>
+                </div>
+                <div class="cta-trust">
+                    <div class="trust-item">
+                        <i class="fas fa-star"></i>
+                        <span>No Ratings</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Free to use</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure Platform</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-credit">
+                Developed by <a href="https://adongojakes.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: #ff0606;">Adongo</a>
+            </p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+               <!-- <a href="#"><i class="fab fa-instagram"></i></a>-->
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <!-- Sign Up Form -->
+            <div id="signupForm-container" class="form-container active">
+                <h2>Sign Up</h2>
+                <form id="signupForm" class="signup-form">
+                    <div class="form-group">
+                        <input type="email" id="signup-email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="signup-btn">Create Account</button>
+                </form>
+                <div class="divider">
+                    <span>or</span>
+                </div>
+                <button class="google-btn" id="signupGoogleBtn">
+                    <i class="fab fa-google"></i>
+                    Sign up with Google
+                </button>
+                <p class="form-footer">Already have an account? <a href="#" id="showLoginForm">Login</a></p>
+            </div>
+
+            <!-- Login Form -->
+            <div id="loginForm-container" class="form-container">
+                <h2>Login</h2>
+                <form id="loginForm" class="login-form">
+                    <div class="form-group">
+                        <input type="email" id="login-email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="login-password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+                <div class="divider">
+                    <span>or</span>
+                </div>
+                <button class="google-btn" id="loginGoogleBtn">
+                    <i class="fab fa-google"></i>
+                    Login with Google
+                </button>
+                <p class="form-footer">Don't have an account? <a href="#" id="showSignupForm">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script type="module" src="config.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

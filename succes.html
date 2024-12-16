@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalTitles - Generate Titles</title>
+    <link rel="icon" href="./images/icon.svg" type="image/png">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="glitch-text">ViralTitles</h1>
+            <p class="subtitle">Generate optimized titles for your YouTube videos or evaluate your title ideas with TitleStorm</p>
+            
+            <div class="action-buttons">
+                <button class="action-btn" id="generateBtn">Generate Titles</button>
+                <button class="action-btn" id="evaluateBtn">Evaluate Title Idea</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="generateSection" class="active">
+                <h2>Generate Titles</h2>
+                <div class="input-container">
+                    <input type="text" id="videoUrl" placeholder="https://www.youtube.com/watch?v=...">
+                    <button id="generateTitles">Generate</button>
+                </div>
+
+                <div class="results-container">
+                    <div class="original-title">
+                        <h3>Original Title:</h3>
+                        <p id="originalTitle"></p>
+                    </div>
+
+                    <div class="generated-titles">
+                        <h3>Generated Titles:</h3>
+                        <div id="titlesList" class="titles-list">
+                            <!-- Titles will be added here dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="evaluateSection">
+                <h2>Evaluate Title</h2>
+                <div class="input-container">
+                    <input type="text" id="titleIdea" placeholder="Enter your title idea...">
+                    <button id="evaluateTitle">Evaluate</button>
+                </div>
+
+                <div class="evaluation-results">
+                    <!-- Evaluation results will be added here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Toast notification for copy -->
+    <div id="toast" class="toast">Copied to clipboard!</div>
+
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>
